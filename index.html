@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Lista</title>
@@ -8,17 +9,23 @@
 	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
 	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
-<body>
-	<table border = "1" id="info">
+
+<body onload="exibir();">
+	<table border="1" id="info" class="table text-center">
 		<tr>
-			<th>Nome</th>
-			<th>Cor da moto</th>
-			<th>Placa</th>
-			<th>CNH</th>
-			<th>Opções</th>
+			<thead>
+				<th class="th-head col">Nome</th>
+				<th class="th-head col">Cor da moto</th>
+				<th class="th-head col">Placa</th>
+				<th class="th-head col">CNH</th>
+				<th class="th-head col">Opções</th>
+			</thead>
 		</tr>
 	</table>
 	<script src="script.js"></script>
 </body>
+
 </html>

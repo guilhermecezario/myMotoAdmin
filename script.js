@@ -19,20 +19,20 @@ let user = document.getElementById('user');
 	
 function exibir(){
 	info.innerHTML = "";
-	info.innerHTML = "<tr><th>Nome</th><th>Cor da moto</th><th>Placa</th><th>CNH</th><th>Opções</th></tr>";
+	info.innerHTML = "<tr><thead><th>Nome</th><th>Cor da moto</th><th>Placa</th><th>CNH</th><th>Opções</th></thead></tr>";
 
 	refPed.on("child_added", data =>{
 		dados = data.val();
 		id = data.key;
 		console.log("dados"+data);
-		info.innerHTML += "<tr>"+
-		"<th>"+dados
-		"<th>"+dados.cor+"</th>"+
-		"<th>"+dados.placa+"</th>"+
-		"<th>"+"<img src="+dados.cnh_image+" style='width:20%'>"+"</th>"+
-		"<th>"+"<button id="+id+" onclick='aceitar(this.id)'>Aceitar</button>"+
-				"<button id="+id+" onclick='recusar(this.id)'>Recusar</button>"+"</th>"+
-		"</tr>";
+		info.innerHTML += "<tbody><tr>"+
+		"<th class='th-body'><h4 class='mt-h4'><strong>"+dados.nome+"</strong></h4></th>"+
+		"<th class='th-body'><h4 class='mt-h4'><strong>"+dados.cor+"</strong></h4></th>"+
+		"<th class='th-body'><h4 class='mt-h4'><strong>"+dados.placa+"</strong></h4></th>"+
+		"<th>"+"<img src="+dados.cnh_image+" class='img'>"+"</th>"+
+		"<th>"+"<div><button class='btn btn-success btn-lg btn-block mb-3 mt-5' id="+id+" onclick='aceitar(this.id)'>Aceitar</button></div>"+
+				"<div><button class='btn btn-danger btn-lg btn-block'id="+id+" onclick='recusar(this.id)'>Recusar</button>"+"</th></div>"+
+		"</tr></tbody>";
 	});
 }
 
@@ -49,7 +49,7 @@ function exibir(){
 			}).then(function(){
 				$.ajax({
 					method: "POST",
-					url: "./email/aceito.php",
+					url: "email/aceito.php",
 					data: {
 						email: dados.email,
 						nome: dados.nome
@@ -74,7 +74,7 @@ function exibir(){
 				console.log("usuario deletado");
 				$.ajax({
 					method: "POST",
-					url: "./email/recusado.php",
+					url: "email/recusado.php",
 					data: {
 						email: dados.email,
 						nome: dados.nome

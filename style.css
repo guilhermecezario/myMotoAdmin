@@ -1,3 +1,44 @@
-.img{
-	width: 50%;
+@font-face {
+    src: url(../fonts/kollektif-bold.ttf);
+    font-family: 'KollektifBold';
+    font-weight: normal;
 }
+
+@font-face {
+    src: url(../fonts/Gidole-Regular.otf);
+    font-family: 'Gidole';
+    font-weight: normal;
+}
+.th-head{
+	font-family: 'kollektifBold';
+}
+.th-body{
+	font-family: 'Gidole';
+}
+
+.img{
+	width: 20%;
+	transition: 0.4s ease;
+}
+
+.img:hover { 
+	width: 40%;
+}
+
+.mt-h4{
+	margin-top: 10vh;
+}
+
+thead{
+	background-color: #f5f6fa;
+}
+
+tbody:nth-child(odd) {
+    background-color: rgb(208, 218, 255);
+}
+
+tbody:nth-child(even) {
+	background-color: #192a56;
+	color: white;
+}
+

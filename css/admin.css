@@ -331,3 +331,7 @@ a.article:hover {
 .img-table{
     height: 20%;
 }
+
+.invisivel {
+    display: none;
+}

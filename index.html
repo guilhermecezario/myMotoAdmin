@@ -2,70 +2,68 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google" content="notranslate" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/logoMoto.png" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google" content="notranslate" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/logoMoto.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+  <title>Login</title>
 </head>
 
 <body>
-    <script src="js/esconde.js"></script>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-8 right-bgcolor p-5">
-                <div class="text-left text-img">
-                    <h4 class="title-h4">Bem Vindo ao <strong>My Moto</strong></h4>
-                    <p class="p-img">Entre com a sua conta de Administrador</p>
-                </div>
-                <div class="img-homealign text-center">
-                    <img src="img/homelogin.png" class="img-home img-fluid">
-                </div>
-            </div>
-            <div class="col-lg-4 left-bgcolor p-5">
-                <div class="align-input">
-                    <form>
-                        <div class="mb-3">
-                            <label for="email">Email:<br>
-                                <input type="email" name="email" id="inputEmail" class="input-shadow input-text"
-                                    placeholder="Insira seu Email">
-                            </label>
-                        </div>
-                        <div class="mb-3">
-                            <label for="senha">Senha:<br>
-                                <input type="password" name="senha" id="inputSenha" class="input-shadow input-text"
-                                    placeholder="Insira sua Senha">
-                            </label>
-                        </div>
-                        <div>
-                            <h4 class="mb-3 fa-1x msgLoginColor" id="msgLogin"></h4>
-                        </div>
-                        <div class="alignbottom-check">
-                            <div class="input-check mb-3"><input type="checkbox" name="logado" id="logado"><label
-                                    for="logado" class="label-check ">Mantenha-me Conectado</label><a href="#"
-                                    class="link-senha">Esqueceu a senha?</a>
-                            </div>
-
-                        </div>
-                    </form>
-                    <div>
-                        <button class="btn btn-custom btn-lg" id="btnLogin">Entrar <i
-                                class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </div>
+  <script src="js/esconde.js"></script>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 right-bgcolor p-5">
+        <div class="text-left text-img">
+          <h4 class="title-h4">Bem Vindo ao <strong>My Moto</strong></h4>
+          <p class="p-img">Entre com a sua conta de Administrador</p>
         </div>
+        <div class="img-homealign text-center">
+          <img src="img/homelogin.png" class="img-home img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-4 left-bgcolor p-5">
+        <div class="align-input">
+          <form>
+            <div class="mb-3">
+              <label for="email">Email:<br>
+                <input type="email" name="email" id="inputEmail" class="input-shadow input-text"
+                  placeholder="Insira seu Email">
+              </label>
+            </div>
+            <div class="mb-3">
+              <label for="senha">Senha:<br>
+                <input type="password" name="senha" id="inputSenha" class="input-shadow input-text"
+                  placeholder="Insira sua Senha">
+              </label>
+            </div>
+            <div>
+              <h4 class="mb-3 fa-1x msgLoginColor" id="msgLogin"></h4>
+            </div>
+            <div class="alignbottom-check">
+              <div class="input-check mb-3"><input type="checkbox" name="logado" id="logado"><label for="logado"
+                  class="label-check ">Mantenha-me Conectado</label><a href="#" class="link-senha">Esqueceu a senha?</a>
+              </div>
+
+            </div>
+          </form>
+          <div>
+            <button class="btn btn-custom btn-lg" id="btnLogin">Entrar <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="js/adminApp.js"></script>
-    <script src="js/login.js"></script>
+  </div>
+  <script src="js/adminApp.js"></script>
+  <script src="js/login.js"></script>
 
 </body>
 

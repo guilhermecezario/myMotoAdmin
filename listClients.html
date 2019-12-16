@@ -22,7 +22,7 @@
   </script>
 </head>
 
-<body onload="exibir();">
+<body>
   <script src="js/esconde.js"></script>
   <div class="wrapper">
 
@@ -60,27 +60,24 @@
             <i class="fas fa-bars"></i>
           </button>
         </div>
+        <input type="search" placeholder="buscar cliente" id="buscar">
       </nav>
       <div class="content-top">
 
-      </div>
+        </div>
       <div>
         <div class="row justify-content-center">
           <div class="col-lg-11">
             <div class="itemContent itemContent-table">
-              <div class="itemContent-title">
-                <h4>Cadastros Pendentes</h4>
-                </h4><a href="#" class="iconContent"><i class="fas fa-arrow-right"></i></a>
+              <div class="itemContent-title d-flex justify-content-between">
+                <h4>Todos os clientes</h4>
+                <h4>Total: <span id="total">0</span></h4>
               </div>
               <div class="itemContent-body text-center">
                 <table class="table table-borderless text-center">
                   <thead>
                     <tr>
                       <th class="th-head" scope="col">Nome</th>
-                      <th class="th-head" scope="col">Cor da moto</th>
-                      <th class="th-head" scope="col">Placa</th>
-                      <th class="th-head" scope="col">CNH</th>
-                      <th class="th-head" scope="col">Opções</th>
                     </tr>
                   </thead>
                   <tbody id="list">
@@ -111,8 +108,9 @@
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
   </script>
+  <script src="js/search.js"></script>
   <script src="js/initializeFirebase.js"></script>
-  <script src="js/adminApp.js"></script>
+  <script src="js/listClients.js"></script>
   <script src="js/logOut.js"></script>
   <script src="js/fixedScroll.js"></script>
 
